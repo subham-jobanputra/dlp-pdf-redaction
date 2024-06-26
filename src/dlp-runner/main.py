@@ -75,6 +75,12 @@ def process_image(input_file_bucket, input_file, output_file_bucket,
     print(f"Input file downloaded from GCS to {tmp_file}")
 
     # redact file using DLP
+
+    import time
+    print('Hello My code is run 😁')
+    time.sleep(60*5)
+    print('Hello My code  after delay run 😁')
+
     findings = redact_image(project, tmp_file, tmp_file_redacted,
                             inspect_template, include_quotes)
     print(f"Redacted image saved to file {tmp_file_redacted}")
