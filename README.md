@@ -53,7 +53,7 @@ You will first need to build the docker images for each microservice.
 
 ```
 PROJECT_ID=[YOUR_PROJECT_ID]
-gcloud services enable cloudbuild.googleapis.com containerregistry.googleapis.com compute.googleapis --project $PROJECT_ID
+gcloud services enable cloudbuild.googleapis.com containerregistry.googleapis.com compute.googleapis.com --project $PROJECT_ID
 gcloud builds submit --config ./build-app-images.yaml --project $PROJECT_ID
 ```
 Note: If you receive a pop-up for permissions, you can authorize gcloud to request your credentials an make a GCP API call.
